@@ -1,23 +1,23 @@
 <template>
-	<div style="display: flex; flex-direction: column; height: 100vh;">
+	<md-content style="display: flex; flex-direction: column; height: 100vh;" md-theme="primary">
 		<nav class="nav-bar">
 			<p class="nav-bar-text">
 				일본어 학습
 			</p>
 		</nav>
 		<router-view style="flex: 1; align-items: center;"></router-view>
-	</div>
+	</md-content>
 </template>
 
 <script>
-import Main from './views/Main.vue'
+import Main from './views/Main.vue';
 
 export default {
 	name: 'App',
 	components: {
 		Main: Main
 	}
-}
+};
 </script>
 
 <style>

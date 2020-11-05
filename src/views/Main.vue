@@ -14,7 +14,18 @@
 			</div>
 		</div>
 		<div class="card">
-
+			<div class="card-title">단어</div>
+			<div class="card-problem-list">
+				<md-checkbox v-model="noun" class="md-theme-reverse" style="color: white;">명사</md-checkbox>
+				<md-checkbox v-model="adj" class="md-theme-reverse" style="color: white;">형용사</md-checkbox>
+				<md-checkbox v-model="verb" class="md-theme-reverse" style="color: white;">동사</md-checkbox>
+			</div>
+			<div class="card-test">
+				<md-button class="md-dense md-theme-primary">
+					<span>테스트 시작</span>
+					<span class="mdi mdi-chevron-right"></span>
+				</md-button>
+			</div>
 		</div>
 	</div>
 </template>
@@ -25,6 +36,10 @@ export default {
 	data: () => ({
 		hiragana: false,
 		katakana: false,
+
+		noun: false,
+		adj: false,
+		verb: false
 	})
 }
 </script>
@@ -38,8 +53,8 @@ export default {
 }
 
 .card {
-	width: 520px;
-	height: 470px;
+	width: 45%;
+	height: 80%;
 
 	background: #FF4081;
 	opacity: 0.7;
@@ -70,7 +85,7 @@ export default {
 	justify-content: center;
 	flex-direction: column;
 
-	margin: 0 70px;
+	margin: 0 30px;
 
 	font-size: 20px;
 }
