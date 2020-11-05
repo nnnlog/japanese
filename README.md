@@ -1,4 +1,4 @@
-# jp-study-1
+# 일본어 학습 프로그램
 
 ## Project setup
 ```
@@ -14,6 +14,3 @@ npm run serve
 ```
 npm run build
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

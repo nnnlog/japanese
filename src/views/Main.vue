@@ -1,0 +1,89 @@
+<template>
+	<div class="card-list">
+		<div class="card">
+			<div class="card-title">글자</div>
+			<div class="card-problem-list">
+				<md-checkbox v-model="hiragana" class="md-theme-reverse" style="color: white;">히라가나 (ひらがな)</md-checkbox>
+				<md-checkbox v-model="katakana" class="md-theme-reverse" style="color: white;">가타카나 (カタカナ)</md-checkbox>
+			</div>
+			<div class="card-test">
+				<md-button class="md-dense md-theme-primary">
+					<span>테스트 시작</span>
+					<span class="mdi mdi-chevron-right"></span>
+				</md-button>
+			</div>
+		</div>
+		<div class="card">
+
+		</div>
+	</div>
+</template>
+
+<script>
+export default {
+	name: 'Main',
+	data: () => ({
+		hiragana: false,
+		katakana: false,
+	})
+}
+</script>
+
+<style scoped>
+.card-list {
+	display: flex;
+	width: 80%;
+	margin: 0 auto;
+	justify-content: space-between;
+}
+
+.card {
+	width: 520px;
+	height: 470px;
+
+	background: #FF4081;
+	opacity: 0.7;
+
+	box-shadow: 0px 4px 20px 1px rgba(0, 0, 0, 0.25);
+	border-radius: 20px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	padding: 40px;
+}
+
+.card-title {
+	font-style: normal;
+	font-weight: 800;
+	font-size: 36px;
+	color: #FFFFFF;
+
+	text-align: left;
+}
+
+.card-problem-list {
+	flex: 1;
+
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+
+	margin: 0 70px;
+
+	font-size: 20px;
+}
+
+.card-test {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+.card-test * {
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+}
+</style>
