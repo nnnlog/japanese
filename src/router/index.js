@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Main from '../views/Main';
+import Spell from '../views/Spell';
 import NotFound from '../views/NotFound';
 
 Vue.use(Router);
@@ -15,8 +16,8 @@ export default new Router({
     },
     {
       path: '/spell/',
-      name: 'Main',
-      component: Main
+      name: 'Spell',
+      component: Spell
     },
     {
       path: '/*',

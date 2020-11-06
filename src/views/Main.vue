@@ -7,7 +7,7 @@
 				<md-checkbox v-model="katakana" class="md-theme-reverse" style="color: white;">가타카나 (カタカナ)</md-checkbox>
 			</div>
 			<div class="card-test">
-				<md-button class="md-dense md-theme-primary">
+				<md-button class="md-dense md-theme-primary" @click="startQuizSpell();">
 					<span>테스트 시작</span>
 					<span class="mdi mdi-chevron-right"></span>
 				</md-button>
@@ -31,7 +31,7 @@
 				</md-field>
 			</div>
 			<div class="card-test">
-				<md-button class="md-dense md-theme-primary" @click="startQuizSpell();">
+				<md-button class="md-dense md-theme-primary">
 					<span>테스트 시작</span>
 					<span class="mdi mdi-chevron-right"></span>
 				</md-button>
@@ -62,7 +62,7 @@ export default {
 
 		}
 	},
-	computed() {
+	computed: {
 
 	}
 }

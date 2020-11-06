@@ -4,7 +4,7 @@
 
 <script>
 export default {
-	name: "spell",
+	name: "Spell",
 	data() {
 		return {
 			hiragana: [
