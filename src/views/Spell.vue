@@ -1,0 +1,113 @@
+<template>
+
+</template>
+
+<script>
+export default {
+	name: "spell",
+	data() {
+		return {
+			hiragana: [
+				{text: "あ", speak: "a"},
+				{text: "い", speak: "i"},
+				{text: "う", speak: "u"},
+				{text: "え", speak: "e"},
+				{text: "お", speak: "o"},
+				{text: "か", speak: "ka"},
+				{text: "き", speak: "ki"},
+				{text: "く", speak: "ku"},
+				{text: "け", speak: "ke"},
+				{text: "こ", speak: "ko"},
+				{text: "さ", speak: "sa"},
+				{text: "し", speak: "shi"},
+				{text: "す", speak: "su"},
+				{text: "せ", speak: "se"},
+				{text: "そ", speak: "so"},
+				{text: "た", speak: "ta"},
+				{text: "ち", speak: "chi"},
+				{text: "つ", speak: "tsu"},
+				{text: "て", speak: "te"},
+				{text: "と", speak: "to"},
+				{text: "な", speak: "na"},
+				{text: "に", speak: "ni"},
+				{text: "ぬ", speak: "nu"},
+				{text: "ね", speak: "ne"},
+				{text: "の", speak: "no"},
+				{text: "は", speak: "ha"},
+				{text: "ひ", speak: "hi"},
+				{text: "ふ", speak: "hu"},
+				{text: "へ", speak: "he"},
+				{text: "ほ", speak: "ho"},
+				{text: "ま", speak: "ma"},
+				{text: "み", speak: "mi"},
+				{text: "む", speak: "mu"},
+				{text: "め", speak: "me"},
+				{text: "も", speak: "mo"},
+				{text: "や", speak: "ya"},
+				{text: "ゆ", speak: "yu"},
+				{text: "よ", speak: "yo"},
+				{text: "ら", speak: "ra"},
+				{text: "り", speak: "ri"},
+				{text: "る", speak: "ru"},
+				{text: "れ", speak: "re"},
+				{text: "ろ", speak: "ro"},
+				{text: "わ", speak: "wa"},
+				{text: "を", speak: "(w)o"},
+				{text: "ん", speak: "n"}
+			],
+			katakana: [
+				{text: "ア", speak: "a"},
+				{text: "イ", speak: "i"},
+				{text: "ウ", speak: "u"},
+				{text: "エ", speak: "e"},
+				{text: "オ", speak: "o"},
+				{text: "カ", speak: "ka"},
+				{text: "キ", speak: "ki"},
+				{text: "ク", speak: "ku"},
+				{text: "ケ", speak: "ke"},
+				{text: "コ", speak: "ko"},
+				{text: "サ", speak: "sa"},
+				{text: "シ", speak: "shi"},
+				{text: "ス", speak: "su"},
+				{text: "セ", speak: "se"},
+				{text: "ソ", speak: "so"},
+				{text: "タ", speak: "ta"},
+				{text: "チ", speak: "chi"},
+				{text: "ツ", speak: "tsu"},
+				{text: "テ", speak: "te"},
+				{text: "ト", speak: "to"},
+				{text: "ナ", speak: "na"},
+				{text: "ニ", speak: "ni"},
+				{text: "ヌ", speak: "nu"},
+				{text: "ネ", speak: "ne"},
+				{text: "ノ", speak: "no"},
+				{text: "ハ", speak: "ha"},
+				{text: "ヒ", speak: "hi"},
+				{text: "フ", speak: "hu"},
+				{text: "ヘ", speak: "he"},
+				{text: "ホ", speak: "ho"},
+				{text: "マ", speak: "ma"},
+				{text: "ミ", speak: "mi"},
+				{text: "ム", speak: "mu"},
+				{text: "メ", speak: "me"},
+				{text: "モ", speak: "mo"},
+				{text: "ヤ", speak: "ya"},
+				{text: "ユ", speak: "yu"},
+				{text: "ヨ", speak: "yo"},
+				{text: "ラ", speak: "ra"},
+				{text: "リ", speak: "ri"},
+				{text: "ル", speak: "ru"},
+				{text: "レ", speak: "re"},
+				{text: "ロ", speak: "ro"},
+				{text: "ワ", speak: "wa"},
+				{text: "ヲ", speak: "(w)o"},
+				{text: "ン", speak: "n"}
+			]
+		};
+	}
+}
+</script>
+
+<style scoped>
+
+</style>

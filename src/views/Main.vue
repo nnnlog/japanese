@@ -19,9 +19,19 @@
 				<md-checkbox v-model="noun" class="md-theme-reverse" style="color: white;">명사</md-checkbox>
 				<md-checkbox v-model="adj" class="md-theme-reverse" style="color: white;">형용사</md-checkbox>
 				<md-checkbox v-model="verb" class="md-theme-reverse" style="color: white;">동사</md-checkbox>
+				<md-field>
+					<label for="chapter">학습할 단원</label>
+					<md-select v-model="selectedChapter" name="chapter" id="chapter" multiple>
+						<md-option value="1">1과</md-option>
+						<md-option value="2">2과</md-option>
+						<md-option value="3">3과</md-option>
+						<md-option value="4">4과</md-option>
+						<md-option value="5">7과</md-option>
+					</md-select>
+				</md-field>
 			</div>
 			<div class="card-test">
-				<md-button class="md-dense md-theme-primary">
+				<md-button class="md-dense md-theme-primary" @click="startQuizSpell();">
 					<span>테스트 시작</span>
 					<span class="mdi mdi-chevron-right"></span>
 				</md-button>
@@ -33,14 +43,28 @@
 <script>
 export default {
 	name: 'Main',
-	data: () => ({
-		hiragana: false,
-		katakana: false,
+	data() {
+		return {
+			hiragana: false,
+			katakana: false,
 
-		noun: false,
-		adj: false,
-		verb: false
-	})
+			noun: false,
+			adj: false,
+			verb: false,
+			selectedChapter: []
+		};
+	},
+	methods: {
+		startQuizSpell() {
+			this.$router.push('spell');
+		},
+		startQuizVocabulary() {
+
+		}
+	},
+	computed() {
+
+	}
 }
 </script>
 
@@ -54,12 +78,12 @@ export default {
 
 .card {
 	width: 45%;
-	height: 80%;
+	min-height: 450px;
 
 	background: #FF4081;
 	opacity: 0.7;
 
-	box-shadow: 0px 4px 20px 1px rgba(0, 0, 0, 0.25);
+	box-shadow: 0 4px 20px 1px rgba(0, 0, 0, 0.25);
 	border-radius: 20px;
 
 	display: flex;
@@ -100,5 +124,17 @@ export default {
 	color: white;
 	font-size: 18px;
 	font-weight: bold;
+}
+
+@media (max-width: 800px) {
+	.card-list {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.card {
+		width: 100%;
+		margin-top: 30px;
+	}
 }
 </style>

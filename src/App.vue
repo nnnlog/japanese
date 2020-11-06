@@ -1,5 +1,5 @@
 <template>
-	<md-content style="display: flex; flex-direction: column; height: 100vh;" md-theme="primary">
+	<md-content style="display: flex; flex-direction: column; min-height: 100vh;" md-theme="primary">
 		<nav class="nav-bar">
 			<p class="nav-bar-text">
 				일본어 학습

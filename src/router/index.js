@@ -14,6 +14,11 @@ export default new Router({
       component: Main
     },
     {
+      path: '/spell/',
+      name: 'Main',
+      component: Main
+    },
+    {
       path: '/*',
       name: '404',
       component: NotFound
