@@ -26,12 +26,12 @@
 						<md-option value="2">2과</md-option>
 						<md-option value="3">3과</md-option>
 						<md-option value="4">4과</md-option>
-						<md-option value="5">7과</md-option>
+						<md-option value="7">7과</md-option>
 					</md-select>
 				</md-field>
 			</div>
 			<div class="card-test">
-				<md-button class="md-dense md-theme-primary">
+				<md-button class="md-dense md-theme-primary" @click="startQuizWord();">
 					<span>테스트 시작</span>
 					<span class="mdi mdi-chevron-right"></span>
 				</md-button>
@@ -56,15 +56,39 @@ export default {
 	},
 	methods: {
 		startQuizSpell() {
-			this.$router.push('spell');
+			this.$store.dispatch('saveQuizSetting', {
+				hiragana: this.hiragana,
+				katakana: this.katakana,
+				noun: this.noun,
+				adj: this.adj,
+				verb: this.verb,
+				selectedChapter: this.selectedChapter
+			});
+			let quizSetting = this.$store.getters.quizSetting;
+			if (!quizSetting.hiragana && !quizSetting.katakana) {
+				alert("히라가나 또는 가타카나를 선택해주세요.");
+				return;
+			}
+			this.$router.push({name: 'Spell'});
 		},
-		startQuizVocabulary() {
-
+		startQuizWord() {
+			this.$store.dispatch('saveQuizSetting', {
+				hiragana: this.hiragana,
+				katakana: this.katakana,
+				noun: this.noun,
+				adj: this.adj,
+				verb: this.verb,
+				selectedChapter: this.selectedChapter
+			});
+			let quizSetting = this.$store.getters.quizSetting;
+			if (!quizSetting.noun && !quizSetting.verb && !quizSetting.adj && !quizSetting.selectedChapter.length) {
+				alert("퀴즈 범위를 선택해주세요.");
+				return;
+			}
+			this.$router.push({name: 'Word'});
 		}
 	},
-	computed: {
-
-	}
+	computed: {}
 }
 </script>
 
