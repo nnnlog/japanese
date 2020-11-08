@@ -81,19 +81,12 @@ export default {
 			let quizSetting = this.$store.getters.quizSetting;
 			let problem = [];
 
-			console.log(Words.words);
-
-			/**
-			 * TODO: Initialize word with more conditions.
-			 */
 			Words.words.forEach(word => {
 				if (quizSetting.selectedChapter.includes(String(word.chapter))) problem.push(word);
 				else if (quizSetting.noun && word.word_class.includes(Words.word_class.NOUN)) problem.push(word);
 				else if (quizSetting.adj && word.word_class.includes(Words.word_class.ADJ)) problem.push(word);
 				else if (quizSetting.verb && word.word_class.includes(Words.word_class.VERB)) problem.push(word);
 			});
-
-			console.log(problem)
 
 			this.quizProblem = this.shuffle(problem);
 
