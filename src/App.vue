@@ -5,17 +5,53 @@
 				일본어 학습
 			</p>
 			<div style="margin-right: 20px; font-size: 17px;">
-				<div v-if="{'spell': 1, 'word': 1}[$route.fullPath.split('/').filter(s => s !== '').join('/')]" style="display: flex; justify-content: center;">
-					<p style="color: green; margin-right: 3px;">{{$store.getters.quizStatus.ac}}</p>
+				<div v-if="{'spell': 1, 'word': 1}[$route.fullPath.split('/').filter(s => s !== '').join('/')]"
+				     style="display: flex; justify-content: center;">
+					<p style="color: green; margin-right: 3px;">{{ $store.getters.quizStatus.ac }}</p>
 					<p style="margin-right: 3px;">/</p>
-					<p style="color: red; margin-right: 3px;">{{$store.getters.quizStatus.wa}}</p>
+					<p style="color: red; margin-right: 3px;">{{ $store.getters.quizStatus.wa }}</p>
 					<p style="margin-right: 3px;">/</p>
-					<p style="color: #c7cc00;">{{$store.getters.quizStatus.re}}</p>
+					<p style="color: #c7cc00;">{{ $store.getters.quizStatus.re }}</p>
 				</div>
 				<md-tooltip>맞은 문제 / 틀린 문제 / 남은 문제</md-tooltip>
 			</div>
 		</nav>
 		<router-view style="flex: 1; align-items: center;"></router-view>
+
+		<md-button style="position: fixed; bottom: 20px; left: 20px; font-size: 25px; min-width: 1%;"
+		           @click="showInfoDialog = true">
+			<span class="mdi mdi-information-outline"></span>
+		</md-button>
+
+		<md-dialog :md-active.sync="showInfoDialog" style="font-size: 17px;">
+			<md-dialog-title>Information / 정보</md-dialog-title>
+			<md-tabs md-dynamic-height>
+				<md-tab md-label="CREATOR">
+					<b>단어와 아이디어를 제공해주신 일본어 선생님께 감사드립니다.</b>
+					<div>Created by <span><a href="https://github.com/nnnlog/" target="_blank">박찬솔</a><md-tooltip>nlog</md-tooltip></span>.
+					</div>
+				</md-tab>
+
+				<md-tab md-label="CONTRIBUTE">
+					<p>이 프로젝트는 오픈소스로 진행하고 있습니다!</p>
+					<p>단어 추가나 오류 수정, 제보와 같은 기여는 <a href="https://github.com/nnnlog/japanese" target="_blank">이 레포지토리
+						<md-tooltip>nnnlog/japanese</md-tooltip>
+					</a>로 부탁드립니다.
+					</p>
+				</md-tab>
+
+				<md-tab md-label="HOSTING">
+					<p><a href="https://github.com/nnnlog/jp.nlog.dev" target="_blank">이 레포지토리
+						<md-tooltip>nnnlog/jp.nlog.dev</md-tooltip>
+					</a>에서 Github Pages를 사용하여 웹페이지를 배포하고 있습니다.
+					</p>
+				</md-tab>
+			</md-tabs>
+
+			<md-dialog-actions>
+				<md-button class="md-primary" @click="showInfoDialog = false">Close</md-button>
+			</md-dialog-actions>
+		</md-dialog>
 	</md-content>
 </template>
 
@@ -26,6 +62,11 @@ export default {
 	name: 'App',
 	components: {
 		Main: Main
+	},
+	data() {
+		return {
+			showInfoDialog: false
+		};
 	}
 };
 </script>
