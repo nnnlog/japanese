@@ -4,22 +4,22 @@
 			<h1>퀴즈 종료</h1>
 			<p>맞춘 문제 : {{ ac }}</p>
 			<p>틀린 문제 : {{ wa }}</p>
-			<br>
-			<p style="cursor: pointer;" @click="$router.push({name: 'Main'})">메인 페이지로 돌아가기 <span class="mdi mdi-chevron-right"></span></p>
+			<p><a style="cursor: pointer;" @click="$router.push({name: 'Main'})">메인으로 돌아가기 <span class="mdi mdi-chevron-right"></span></a></p>
+			<p><a style="cursor: pointer;" @click="startQuiz()">다시하기 <span class="mdi mdi-chevron-right"></span></a></p>
 		</div>
 		<div v-else class="card" :class="`card-${cardStatus}`">
-			<div class="card-quiz">{{ quizProblem[quizId].text }}</div>
+			<div class="card-quiz" :class="quizProblem[quizId].text.length > 4 ? 'card-small-text' : ''">{{ quizProblem[quizId].text }}</div>
 			<div class="card-ans-list">
 				<div class="card-ans" v-for="info of ans" @click="solve(info)"
 				     :class="info.text === selectedAns ? `card-${cardStatus}` : ''">
-					<div
+					<!--<div
 							style="flex: 1;"
-							:style="cardStatus === 'ac' || showAns ? `justify-content: flex-end; align-items: flex-end;` : 'justify-content: center;'">
+							:style="cardStatus === 'ac' || showAns ? `justify-content: flex-end; align-items: flex-end;` : 'justify-content: center;'">-->
 						{{ info.mean }}
-					</div>
-					<div :style="cardStatus === 'ac' || showAns ? `display: block;` : 'display: none;'">
+					<!--</div>
+					<div :style="cardStatus === 'ac' || showAns ? `display: block;` : 'display: none;'">-->
 						{{ cardStatus === "ac" || showAns ? `(${info.text})` : '' }}
-					</div>
+					<!--</div>-->
 				</div>
 			</div>
 		</div>
@@ -111,7 +111,7 @@ export default {
 			this.$store.dispatch('setQuizStatus', {
 				ac: this.ac,
 				wa: this.wa,
-				re: this.quizProblem.length - this.quizId - 1
+				re: this.quizProblem.length - this.quizId
 			});
 		},
 		solve(ans) {
@@ -245,6 +245,12 @@ export default {
 	cursor: pointer;
 
 	justify-content: center;
+
+	line-height: 25px;
+}
+
+.card-small-text {
+	font-size: 55px;
 }
 
 .card-ans-list > .card-ans:nth-last-child(1) {
@@ -269,7 +275,7 @@ export default {
 		width: 80%;
 		margin-top: 30px;
 		flex-direction: column;
-		min-height: 300px;
+		min-height: 370px;
 	}
 
 	.card-quiz {
@@ -291,6 +297,10 @@ export default {
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
+	}
+
+	.card-small-text {
+		font-size: 40px;
 	}
 
 }

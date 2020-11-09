@@ -15,7 +15,7 @@ export default new Vuex.Store({
 
 		ac: 0,
 		wa: 0,
-		remaining: 0
+		re: 0
 	},
 	mutations: {
 		setQuizSetting(state, {hiragana, katakana, noun, adj, verb, selectedChapter}) {

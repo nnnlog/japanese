@@ -21,6 +21,7 @@
 		<md-button style="position: fixed; bottom: 20px; left: 20px; font-size: 25px; min-width: 1%;"
 		           @click="showInfoDialog = true">
 			<span class="mdi mdi-information-outline"></span>
+			<md-tooltip>정보</md-tooltip>
 		</md-button>
 
 		<md-dialog :md-active.sync="showInfoDialog" style="font-size: 17px;">
