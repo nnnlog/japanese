@@ -135,9 +135,9 @@ export default {
 		},
 		{
 			text: 'きく',
-			mean: '듣다, 묻다',
+			mean: '듣다, 묻다, 국화',
 			chapter: [7],
-			word_class: [WORD_CLASS.VERB]
+			word_class: [WORD_CLASS.VERB, WORD_CLASS.NOUN]
 		},
 		{
 			text: 'よむ',
@@ -360,12 +360,6 @@ export default {
 			mean: '도와주다, 거들다',
 			chapter: [7],
 			word_class: [WORD_CLASS.VERB]
-		},
-		{
-			text: 'きく',
-			mean: '국화',
-			chapter: [7],
-			word_class: [WORD_CLASS.NOUN]
 		},
 		{
 			text: 'はな',

@@ -8,7 +8,7 @@
 			<p><a style="cursor: pointer;" @click="startQuiz()">다시하기 <span class="mdi mdi-chevron-right"></span></a></p>
 		</div>
 		<div v-else class="card" :class="`card-${cardStatus}`">
-			<div class="card-quiz" :class="quizProblem[quizId].text.length > 4 ? 'card-small-text' : ''">{{ quizProblem[quizId].text }}</div>
+			<div class="card-quiz" :class="quizProblem[quizId].text.length >= 4 ? 'card-small-text' : ''">{{ quizProblem[quizId].text }}</div>
 			<div class="card-ans-list">
 				<div class="card-ans" v-for="info of ans" @click="solve(info)"
 				     :class="info.text === selectedAns ? `card-${cardStatus}` : ''">
@@ -250,7 +250,7 @@ export default {
 }
 
 .card-small-text {
-	font-size: 55px;
+	font-size: 45px;
 }
 
 .card-ans-list > .card-ans:nth-last-child(1) {
@@ -265,7 +265,7 @@ export default {
 	background: #FF4081;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
 	.card-list {
 		flex-direction: column;
 		justify-content: center;

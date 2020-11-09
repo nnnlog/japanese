@@ -206,7 +206,7 @@ export default {
 
 			this.selectedAns = ans.text;
 
-			if (ans.text === this.quizProblem[this.quizId].text) {
+			if (ans.speak === this.quizProblem[this.quizId].speak) {
 				if (!this.alreadyWA) ++this.ac;
 				this.cardStatus = 'ac';
 				this.waSnackbar = false;
@@ -346,7 +346,7 @@ export default {
 	background: #FF4081;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
 	.card-list {
 		flex-direction: column;
 		justify-content: center;

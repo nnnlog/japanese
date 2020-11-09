@@ -150,7 +150,11 @@ export default {
 	font-weight: bold;
 }
 
-@media (max-width: 800px) {
+.md-field > label {
+	color: white !important;
+}
+
+@media (max-width: 1000px) {
 	.card-list {
 		flex-direction: column;
 		justify-content: center;
