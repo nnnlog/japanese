@@ -3,8 +3,8 @@
 		<div class="card">
 			<div class="card-title">글자</div>
 			<div class="card-problem-list">
-				<md-checkbox v-model="hiragana" class="md-theme-reverse" style="color: white;">히라가나 (ひらがな)</md-checkbox>
-				<md-checkbox v-model="katakana" class="md-theme-reverse" style="color: white;">가타카나 (カタカナ)</md-checkbox>
+				<md-checkbox v-model="hiragana" class="md-theme-accent" style="color: white;">히라가나 (ひらがな)</md-checkbox>
+				<md-checkbox v-model="katakana" class="md-theme-accent" style="color: white;">가타카나 (カタカナ)</md-checkbox>
 			</div>
 			<div class="card-test">
 				<md-button class="md-dense md-theme-primary" @click="startQuizSpell();">
@@ -16,9 +16,9 @@
 		<div class="card">
 			<div class="card-title">단어</div>
 			<div class="card-problem-list">
-				<md-checkbox v-model="noun" class="md-theme-reverse" style="color: white;">명사</md-checkbox>
-				<md-checkbox v-model="adj" class="md-theme-reverse" style="color: white;">형용사</md-checkbox>
-				<md-checkbox v-model="verb" class="md-theme-reverse" style="color: white;">동사</md-checkbox>
+				<md-checkbox v-model="noun" class="md-theme-accent" style="color: white;">명사</md-checkbox>
+				<md-checkbox v-model="adj" class="md-theme-accent" style="color: white;">형용사</md-checkbox>
+				<md-checkbox v-model="verb" class="md-theme-accent" style="color: white;">동사</md-checkbox>
 				<md-field>
 					<label for="chapter">학습할 단원</label>
 					<md-select v-model="selectedChapter" name="chapter" id="chapter" multiple>

@@ -109,9 +109,9 @@ html, head, body {
 		primary: #FF4081,
 		accent: #FF4081
 ));
-@include md-register-theme("reverse", (
-		primary: #00bf7e,
-		accent: #00bf7e
+@include md-register-theme("accent", (
+		primary: #f50057,
+		accent: #f50057
 ));
 
 @import "~vue-material/dist/theme/all";
