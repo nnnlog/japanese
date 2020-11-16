@@ -40,7 +40,7 @@ export default {
 		{
 			text: 'のむ',
 			mean: '마시다',
-			chapter: [7],
+			chapter: [7, 8],
 			word_class: [WORD_CLASS.VERB]
 		},
 		{
@@ -371,7 +371,7 @@ export default {
 			text: 'いろいろだ',
 			mean: '여러가지다',
 			chapter: [7],
-			word_class: [WORD_CLASS.VERB]
+			word_class: [WORD_CLASS.VERB] //TODO: question
 		},
 		{
 			text: 'ちがう',
@@ -394,7 +394,7 @@ export default {
 		{
 			text: 'かいもの',
 			mean: '쇼핑',
-			chapter: [7],
+			chapter: [7, 8],
 			word_class: [WORD_CLASS.NOUN]
 		},
 		{
@@ -407,7 +407,7 @@ export default {
 			text: 'にぎやかだ',
 			mean: '붐비다, 번화하다',
 			chapter: [7],
-			word_class: [WORD_CLASS.ADJ]
+			word_class: [WORD_CLASS.ADJ] //TODO: question
 		},
 		{
 			text: 'まち',
@@ -481,5 +481,70 @@ export default {
 			chapter: [7],
 			word_class: [WORD_CLASS.ADJ]
 		},
+		{
+			text: 'メール',
+			mean: '메일',
+			chapter: [8],
+			word_class: [WORD_CLASS.NOUN]
+		},
+		{
+			text: 'メール',
+			mean: '메일',
+			chapter: [8],
+			word_class: [WORD_CLASS.NOUN]
+		},
+
+		{text: 'メール', mean: '메일', chapter: [8], word_class: [WORD_CLASS.NOUN]},
+		{text: 'かく', mean: '쓰다', chapter: [8], word_class: [WORD_CLASS.VERB]},
+		{text: 'ダンス', mean: '댄스, 춤', chapter: [8], word_class: [WORD_CLASS.NOUN]},
+		{text: 'はじめるる', mean: '시작하다', chapter: [8], word_class: [WORD_CLASS.VERB]},
+		{text: 'でんき', mean: '전기, 전등', chapter: [8], word_class: [WORD_CLASS.NOUN]},
+		{text: 'すうがく', mean: '수학', chapter: [8], word_class: [WORD_CLASS.NOUN]},
+		{text: 'べんきょう', mean: '공부', chapter: [8], word_class: [WORD_CLASS.NOUN]},
+		{text: 'デパート', mean: '백화점', chapter: [8], word_class: [WORD_CLASS.NOUN]},
+		{text: 'くつ', mean: '신발, 구두', chapter: [8], word_class: [WORD_CLASS.NOUN]},
+		{text: 'こうえん', mean: '공원', chapter: [8], word_class: [WORD_CLASS.NOUN]},
+		{text: 'しゅうまつ', mean: '주말 ', chapter: [8], word_class: [WORD_CLASS.NOUN]},
+		{text: 'おんせん', mean: '온천', chapter: [8], word_class: [WORD_CLASS.NOUN]},
+		{text: 'きもち', mean: '기분', chapter: [8], word_class: [WORD_CLASS.NOUN]},
+		{text: 'いい/よい', mean: '좋다', chapter: [8], word_class: [WORD_CLASS.ADJ]},
+		{text: 'タクシー', mean: '택시', chapter: [8], word_class: [WORD_CLASS.NOUN]},
+		{text: 'のる', mean: '타다', chapter: [8], word_class: [WORD_CLASS.VERB]},
+		{text: 'すこし', mean: '조금, 약간', chapter: [8], word_class: [WORD_CLASS.NOUN]},
+		{text: 'やすむ', mean: '쉬다', chapter: [8], word_class: [WORD_CLASS.VERB]},
+		{text: 'しゃしん', mean: '사진', chapter: [8], word_class: [WORD_CLASS.NOUN]},
+		{text: 'あそこ', mean: '저기', chapter: [8], word_class: [WORD_CLASS.NOUN]},
+		{text: '～ましょう', mean: '～합시다', chapter: [8], word_class: [WORD_CLASS.VERB]},
+		{text: 'ちょっと', mean: '좀, 조금, 잠깐', chapter: [8], word_class: [WORD_CLASS.NOUN]},
+		{text: 'おちゃ', mean: '차', chapter: [8], word_class: [WORD_CLASS.NOUN]},
+		{text: 'プール', mean: '풀, 수영장', chapter: [8], word_class: [WORD_CLASS.NOUN]},
+		{text: 'およぐ', mean: ' 헤엄치다, 수영하다', chapter: [8], word_class: [WORD_CLASS.VERB]},
+		{text: 'せんぱい', mean: '선배', chapter: [8], word_class: [WORD_CLASS.NOUN]},
+		{text: 'ボランティア', mean: '봉사활동, 자원봉사자', chapter: [8], word_class: [WORD_CLASS.NOUN]},
+		{text: '～たち', mean: '～들', chapter: [8], word_class: [WORD_CLASS.NOUN]},
+		{text: 'わたしたち', mean: '우리들, 저희들', chapter: [8], word_class: [WORD_CLASS.NOUN]},
+		{text: 'かみ', mean: '종이', chapter: [8], word_class: [WORD_CLASS.NOUN]},
+		{text: 'じてんしゃ', mean: '자전거', chapter: [8], word_class: [WORD_CLASS.NOUN]},
+		{text: 'がくせい', mean: '학생', chapter: [8], word_class: [WORD_CLASS.NOUN]},
+		{text: 'わたす', mean: '건네다, 넘기다', chapter: [8], word_class: [WORD_CLASS.VERB]},
+		{text: 'マナー', mean: '매너', chapter: [8], word_class: [WORD_CLASS.NOUN]},
+		{text: 'まもる', mean: '지키다', chapter: [8], word_class: [WORD_CLASS.VERB]},
+		{text: 'スマホ', mean: '스마트폰', chapter: [8], word_class: [WORD_CLASS.NOUN]},
+		{text: 'つかう', mean: '쓰다, 사용하다', chapter: [8], word_class: [WORD_CLASS.VERB]},
+		{text: 'だめだ', mean: '안된다', chapter: [8], word_class: [WORD_CLASS.VERB]}, //TODO: question
+		{text: 'ゆっくり', mean: '천천히, 느긋하게', chapter: [8], word_class: [WORD_CLASS.NOUN]},
+		{text: 'はしる', mean: '달리다', chapter: [8], word_class: [WORD_CLASS.VERB]},
+		{text: 'たいへんだだ', mean: '힘들다', chapter: [8], word_class: [WORD_CLASS.VERB]}, //TODO: question
+		{text: '～けど, ～が', mean: '～지만', chapter: [8], word_class: [WORD_CLASS.NOUN]},
+		{text: 'てつだうう', mean: '돕다, 거들다', chapter: [8], word_class: [WORD_CLASS.VERB]},
+		{text: 'あきはばら', mean: '아키하바라', chapter: [8], word_class: [WORD_CLASS.NOUN]},
+		{text: 'スカイツリー', mean: '스카이트리', chapter: [8], word_class: [WORD_CLASS.NOUN]},
+		{text: 'ゆうめいだだ', mean: '유명하다', chapter: [8], word_class: [WORD_CLASS.ADJ]}, //TODO: question
+		{text: 'ひこうき', mean: '비행기', chapter: [8], word_class: [WORD_CLASS.NOUN]},
+		{text: 'ぐらい', mean: '～정도', chapter: [8], word_class: [WORD_CLASS.NOUN]},
+		{text: 'すごく', mean: '굉장히, 대단히', chapter: [8], word_class: [WORD_CLASS.NOUN]},
+		{text: 'たくさん', mean: '많음, 많이', chapter: [8], word_class: [WORD_CLASS.NOUN]},
+		{text: 'ごはん', mean: '밥', chapter: [8], word_class: [WORD_CLASS.NOUN]},
+		{text: 'アルバイト / バイト', mean: '아르바이트', chapter: [8], word_class: [WORD_CLASS.NOUN]}
 	]
 };

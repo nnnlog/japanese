@@ -22,11 +22,8 @@
 				<md-field>
 					<label for="chapter">학습할 단원</label>
 					<md-select v-model="selectedChapter" name="chapter" id="chapter" multiple>
-						<!--<md-option value="1">1과</md-option>
-						<md-option value="2">2과</md-option>
-						<md-option value="3">3과</md-option>
-						<md-option value="4">4과</md-option>-->
 						<md-option value="7">7과</md-option>
+						<md-option value="8">8과</md-option>
 					</md-select>
 				</md-field>
 			</div>
