@@ -371,7 +371,7 @@ export default {
 			text: 'いろいろだ',
 			mean: '여러가지다',
 			chapter: [7],
-			word_class: [WORD_CLASS.VERB] //TODO: question
+			word_class: [WORD_CLASS.ADJ]
 		},
 		{
 			text: 'ちがう',
@@ -407,7 +407,7 @@ export default {
 			text: 'にぎやかだ',
 			mean: '붐비다, 번화하다',
 			chapter: [7],
-			word_class: [WORD_CLASS.ADJ] //TODO: question
+			word_class: [WORD_CLASS.ADJ]
 		},
 		{
 			text: 'まち',
@@ -531,15 +531,15 @@ export default {
 		{text: 'まもる', mean: '지키다', chapter: [8], word_class: [WORD_CLASS.VERB]},
 		{text: 'スマホ', mean: '스마트폰', chapter: [8], word_class: [WORD_CLASS.NOUN]},
 		{text: 'つかう', mean: '쓰다, 사용하다', chapter: [8], word_class: [WORD_CLASS.VERB]},
-		{text: 'だめだ', mean: '안된다', chapter: [8], word_class: [WORD_CLASS.VERB]}, //TODO: question
+		{text: 'だめだ', mean: '안된다', chapter: [8], word_class: [WORD_CLASS.ADJ]},
 		{text: 'ゆっくり', mean: '천천히, 느긋하게', chapter: [8], word_class: [WORD_CLASS.NOUN]},
 		{text: 'はしる', mean: '달리다', chapter: [8], word_class: [WORD_CLASS.VERB]},
-		{text: 'たいへんだだ', mean: '힘들다', chapter: [8], word_class: [WORD_CLASS.VERB]}, //TODO: question
+		{text: 'たいへんだだ', mean: '힘들다', chapter: [8], word_class: [WORD_CLASS.ADJ]},
 		{text: '～けど, ～が', mean: '～지만', chapter: [8], word_class: [WORD_CLASS.NOUN]},
 		{text: 'てつだうう', mean: '돕다, 거들다', chapter: [8], word_class: [WORD_CLASS.VERB]},
 		{text: 'あきはばら', mean: '아키하바라', chapter: [8], word_class: [WORD_CLASS.NOUN]},
 		{text: 'スカイツリー', mean: '스카이트리', chapter: [8], word_class: [WORD_CLASS.NOUN]},
-		{text: 'ゆうめいだだ', mean: '유명하다', chapter: [8], word_class: [WORD_CLASS.ADJ]}, //TODO: question
+		{text: 'ゆうめいだだ', mean: '유명하다', chapter: [8], word_class: [WORD_CLASS.ADJ]},
 		{text: 'ひこうき', mean: '비행기', chapter: [8], word_class: [WORD_CLASS.NOUN]},
 		{text: 'ぐらい', mean: '～정도', chapter: [8], word_class: [WORD_CLASS.NOUN]},
 		{text: 'すごく', mean: '굉장히, 대단히', chapter: [8], word_class: [WORD_CLASS.NOUN]},
