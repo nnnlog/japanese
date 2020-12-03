@@ -11,6 +11,7 @@ export default new Vuex.Store({
 		noun: false,
 		adj: false,
 		verb: false,
+		etc: false,
 		selectedChapter: [],
 
 		ac: 0,
@@ -18,12 +19,13 @@ export default new Vuex.Store({
 		re: 0
 	},
 	mutations: {
-		setQuizSetting(state, {hiragana, katakana, noun, adj, verb, selectedChapter}) {
+		setQuizSetting(state, {hiragana, katakana, noun, adj, verb, etc, selectedChapter}) {
 			state.hiragana = hiragana;
 			state.katakana = katakana;
 			state.noun = noun;
 			state.adj = adj;
 			state.verb = verb;
+			state.etc = etc;
 			state.selectedChapter = selectedChapter;
 		},
 		setQuizStatus(state, {ac, wa, re}) {
@@ -33,13 +35,14 @@ export default new Vuex.Store({
 		}
 	},
 	actions: {
-		saveQuizSetting({commit}, {hiragana, katakana, noun, adj, verb, selectedChapter}) {
+		saveQuizSetting({commit}, {hiragana, katakana, noun, adj, verb, etc, selectedChapter}) {
 			commit('setQuizSetting', {
 				hiragana: !!hiragana,
 				katakana: !!katakana,
 				noun: !!noun,
 				adj: !!adj,
 				verb: !!verb,
+				etc: !!etc,
 				selectedChapter: Array.isArray(selectedChapter) ? selectedChapter : [],
 			});
 		},
@@ -59,6 +62,7 @@ export default new Vuex.Store({
 				noun: state.noun,
 				adj: state.adj,
 				verb: state.verb,
+				etc: state.etc,
 				selectedChapter: state.selectedChapter
 			}
 		},

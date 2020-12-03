@@ -82,10 +82,12 @@ export default {
 			let problem = [];
 
 			Words.words.forEach(word => {
-				if (quizSetting.selectedChapter.includes(String(word.chapter))) problem.push(word);
-				else if (quizSetting.noun && word.word_class.includes(Words.word_class.NOUN)) problem.push(word);
-				else if (quizSetting.adj && word.word_class.includes(Words.word_class.ADJ)) problem.push(word);
-				else if (quizSetting.verb && word.word_class.includes(Words.word_class.VERB)) problem.push(word);
+				if (quizSetting.selectedChapter.includes(String(word.chapter)) || quizSetting.selectedChapter.includes('all')) {
+          if (quizSetting.noun && word.word_class.includes(Words.word_class.NOUN)) problem.push(word);
+          if (quizSetting.adj && word.word_class.includes(Words.word_class.ADJ)) problem.push(word);
+          if (quizSetting.verb && word.word_class.includes(Words.word_class.VERB)) problem.push(word);
+          if (quizSetting.etc && word.word_class.includes(Words.word_class.ETC)) problem.push(word);
+        }
 			});
 
 			this.quizProblem = this.shuffle(problem);

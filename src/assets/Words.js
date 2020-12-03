@@ -2,11 +2,18 @@ const WORD_CLASS = {
 	NOUN: '0',
 	VERB: '1',
 	ADJ: '2',
+	ETC: '999',
 };
 
 export default {
 	word_class: WORD_CLASS,
 	words: [
+		{
+			text: 'おはよう',
+			mean: '안녕(아침 인사)',
+			chapter: ['etc'],
+			word_class: [WORD_CLASS.ETC] //부사
+		},
 		{
 			text: 'かう',
 			mean: '사다',
@@ -481,19 +488,6 @@ export default {
 			chapter: [7],
 			word_class: [WORD_CLASS.ADJ]
 		},
-		{
-			text: 'メール',
-			mean: '메일',
-			chapter: [8],
-			word_class: [WORD_CLASS.NOUN]
-		},
-		{
-			text: 'メール',
-			mean: '메일',
-			chapter: [8],
-			word_class: [WORD_CLASS.NOUN]
-		},
-
 		{text: 'メール', mean: '메일', chapter: [8], word_class: [WORD_CLASS.NOUN]},
 		{text: 'かく', mean: '쓰다', chapter: [8], word_class: [WORD_CLASS.VERB]},
 		{text: 'ダンス', mean: '댄스, 춤', chapter: [8], word_class: [WORD_CLASS.NOUN]},

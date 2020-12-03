@@ -19,11 +19,14 @@
 				<md-checkbox v-model="noun" class="md-theme-accent" style="color: white;">명사</md-checkbox>
 				<md-checkbox v-model="adj" class="md-theme-accent" style="color: white;">형용사</md-checkbox>
 				<md-checkbox v-model="verb" class="md-theme-accent" style="color: white;">동사</md-checkbox>
+				<md-checkbox v-model="etc" class="md-theme-accent" style="color: white;">기타</md-checkbox>
 				<md-field>
-					<label for="chapter">학습할 단원</label>
+					<label for="chapter">학습할 범위 (단원)</label>
 					<md-select v-model="selectedChapter" name="chapter" id="chapter" multiple>
 						<md-option value="7">7과</md-option>
 						<md-option value="8">8과</md-option>
+						<md-option value="etc">기타</md-option>
+						<md-option value="all">전체</md-option>
 					</md-select>
 				</md-field>
 			</div>
@@ -48,6 +51,7 @@ export default {
 			noun: false,
 			adj: false,
 			verb: false,
+			etc: false,
 			selectedChapter: []
 		};
 	},
@@ -75,10 +79,11 @@ export default {
 				noun: this.noun,
 				adj: this.adj,
 				verb: this.verb,
+				etc: this.etc,
 				selectedChapter: this.selectedChapter
 			});
 			let quizSetting = this.$store.getters.quizSetting;
-			if (!quizSetting.noun && !quizSetting.verb && !quizSetting.adj && !quizSetting.selectedChapter.length) {
+			if ((!quizSetting.noun && !quizSetting.verb && !quizSetting.adj && !quizSetting.etc) || !quizSetting.selectedChapter.length) {
 				alert("퀴즈 범위를 선택해주세요.");
 				return;
 			}
