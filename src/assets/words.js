@@ -617,13 +617,13 @@ export default {
 		{
 			text: 'ちょっと',
 			mean: '좀, 조금, 잠깐',
-			hapter: [8],
-			ord_class: [WORD_CLASS.NOUN]
+			chapter: [8],
+			word_class: [WORD_CLASS.NOUN]
 		},
 		{
 			text: 'おちゃ',
-			ean: '차',
-			hapter: [8],
+			mean: '차',
+			chapter: [8],
 			word_class: [WORD_CLASS.NOUN]
 		},
 		{
@@ -635,170 +635,170 @@ export default {
 		{
 			text: 'およぐ',
 			mean: ' 헤엄치다, 수영하다',
-			hapter: [8],
-			ord_class: [WORD_CLASS.VERB]
+			chapter: [8],
+			word_class: [WORD_CLASS.VERB]
 		},
 		{
 			text: 'せんぱい',
-			ean: '선배',
-			hapter: [8],
-			ord_class: [WORD_CLASS.NOUN]
+			mean: '선배',
+			chapter: [8],
+			word_class: [WORD_CLASS.NOUN]
 		},
 		{
 			text: 'ボランティア',
-			ean: '봉사활동, 자원봉사자',
-			hapter: [8],
-			ord_class: [WORD_CLASS.NOUN]
+			mean: '봉사활동, 자원봉사자',
+			chapter: [8],
+			word_class: [WORD_CLASS.NOUN]
 		},
 		{
 			text: '～たち',
-			ean: '～들',
-			hapter: [8],
-			ord_class: [WORD_CLASS.NOUN]
+			mean: '～들',
+			chapter: [8],
+			word_class: [WORD_CLASS.NOUN]
 		},
 		{
 			text: 'わたしたち',
-			ean: '우리들, 저희들',
-			hapter: [8],
-			ord_class: [WORD_CLASS.NOUN]
+			mean: '우리들, 저희들',
+			chapter: [8],
+			word_class: [WORD_CLASS.NOUN]
 		},
 		{
 			text: 'かみ',
-			ean: '종이',
-			hapter: [8],
-			ord_class: [WORD_CLASS.NOUN]
+			mean: '종이',
+			chapter: [8],
+			word_class: [WORD_CLASS.NOUN]
 		},
 		{
 			text: 'じてんしゃ',
-			ean: '자전거',
-			hapter: [8],
-			ord_class: [WORD_CLASS.NOUN]
+			mean: '자전거',
+			chapter: [8],
+			word_class: [WORD_CLASS.NOUN]
 		},
 		{
 			text: 'がくせい',
-			ean: '학생',
-			hapter: [8],
-			ord_class: [WORD_CLASS.NOUN]
+			mean: '학생',
+			chapter: [8],
+			word_class: [WORD_CLASS.NOUN]
 		},
 		{
 			text: 'わたす',
-			ean: '건네다, 넘기다',
-			hapter: [8],
-			ord_class: [WORD_CLASS.VERB]
+			mean: '건네다, 넘기다',
+			chapter: [8],
+			word_class: [WORD_CLASS.VERB]
 		},
 		{
 			text: 'マナー',
-			ean: '매너',
-			hapter: [8],
-			ord_class: [WORD_CLASS.NOUN]
+			mean: '매너',
+			chapter: [8],
+			word_class: [WORD_CLASS.NOUN]
 		},
 		{
 			text: 'まもる',
-			ean: '지키다',
-			hapter: [8],
-			ord_class: [WORD_CLASS.VERB]
+			mean: '지키다',
+			chapter: [8],
+			word_class: [WORD_CLASS.VERB]
 		},
 		{
 			text: 'スマホ',
-			ean: '스마트폰',
-			hapter: [8],
-			ord_class: [WORD_CLASS.NOUN]
+			mean: '스마트폰',
+			chapter: [8],
+			word_class: [WORD_CLASS.NOUN]
 		},
 		{
 			text: 'つかう',
-			ean: '쓰다, 사용하다',
-			hapter: [8],
-			ord_class: [WORD_CLASS.VERB]
+			mean: '쓰다, 사용하다',
+			chapter: [8],
+			word_class: [WORD_CLASS.VERB]
 		},
 		{
 			text: 'だめだ',
-			ean: '안된다',
-			hapter: [8],
-			ord_class: [WORD_CLASS.ADJ]
+			mean: '안된다',
+			chapter: [8],
+			word_class: [WORD_CLASS.ADJ]
 		},
 		{
 			text: 'ゆっくり',
-			ean: '천천히, 느긋하게',
-			hapter: [8],
-			ord_class: [WORD_CLASS.NOUN]
+			mean: '천천히, 느긋하게',
+			chapter: [8],
+			word_class: [WORD_CLASS.NOUN]
 		},
 		{
 			text: 'はしる',
-			ean: '달리다',
-			hapter: [8],
-			ord_class: [WORD_CLASS.VERB]
+			mean: '달리다',
+			chapter: [8],
+			word_class: [WORD_CLASS.VERB]
 		},
 		{
 			text: 'たいへんだ',
-			ean: '힘들다',
-			hapter: [8],
-			ord_class: [WORD_CLASS.ADJ]
+			mean: '힘들다',
+			chapter: [8],
+			word_class: [WORD_CLASS.ADJ]
 		},
 		{
 			text: '～けど, ～が',
-			ean: '～지만',
-			hapter: [8],
-			ord_class: [WORD_CLASS.NOUN]
+			mean: '～지만',
+			chapter: [8],
+			word_class: [WORD_CLASS.NOUN]
 		},
 		{
 			text: 'てつだう',
-			ean: '돕다, 거들다',
-			hapter: [8],
-			ord_class: [WORD_CLASS.VERB]
+			mean: '돕다, 거들다',
+			chapter: [8],
+			word_class: [WORD_CLASS.VERB]
 		},
 		{
 			text: 'あきはばら',
-			ean: '아키하바라',
-			hapter: [8],
-			ord_class: [WORD_CLASS.NOUN]
+			mean: '아키하바라',
+			chapter: [8],
+			word_class: [WORD_CLASS.NOUN]
 		},
 		{
 			text: 'スカイツリー',
-			ean: '스카이트리',
-			hapter: [8],
-			ord_class: [WORD_CLASS.NOUN]
+			mean: '스카이트리',
+			chapter: [8],
+			word_class: [WORD_CLASS.NOUN]
 		},
 		{
 			text: 'ゆうめいだ',
-			ean: '유명하다',
-			hapter: [8],
-			ord_class: [WORD_CLASS.ADJ]
+			mean: '유명하다',
+			chapter: [8],
+			word_class: [WORD_CLASS.ADJ]
 		},
 		{
 			text: 'ひこうき',
-			ean: '비행기',
-			hapter: [8],
-			ord_class: [WORD_CLASS.NOUN]
+			mean: '비행기',
+			chapter: [8],
+			word_class: [WORD_CLASS.NOUN]
 		},
 		{
 			text: 'ぐらい',
-			ean: '～정도',
-			hapter: [8],
-			ord_class: [WORD_CLASS.NOUN]
+			mean: '～정도',
+			chapter: [8],
+			word_class: [WORD_CLASS.NOUN]
 		},
 		{
 			text: 'すごく',
-			ean: '굉장히, 대단히',
-			hapter: [8],
-			ord_class: [WORD_CLASS.NOUN]
+			mean: '굉장히, 대단히',
+			chapter: [8],
+			word_class: [WORD_CLASS.NOUN]
 		},
 		{
 			text: 'たくさん',
-			ean: '많음, 많이',
-			hapter: [8],
-			ord_class: [WORD_CLASS.NOUN]
+			mean: '많음, 많이',
+			chapter: [8],
+			word_class: [WORD_CLASS.NOUN]
 		},
 		{
 			text: 'ごはん',
-			ean: '밥',
-			hapter: [8],
-			ord_class: [WORD_CLASS.NOUN]
+			mean: '밥',
+			chapter: [8],
+			word_class: [WORD_CLASS.NOUN]
 		},
 		{
 			text: 'アルバイト / バイト',
-			ean: '아르바이트',
-			hapter: [8],
-			ord_class: [WORD_CLASS.NOUN]
+			mean: '아르바이트',
+			chapter: [8],
+			word_class: [WORD_CLASS.NOUN]
 		}
 	]
 };
