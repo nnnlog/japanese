@@ -38,7 +38,7 @@
 </template>
 
 <script>
-import Words from "@/assets/Words";
+import Words from "@/assets/words";
 
 export default {
 	name: "Word",
